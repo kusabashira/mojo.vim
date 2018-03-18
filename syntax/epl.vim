@@ -19,7 +19,7 @@ unlet! b:current_syntax
 syntax include @Perl syntax/perl.vim
 
 " This groups are broken when included
-syn cluster Perl remove=perlFunctionName,perlElseIfError
+syn cluster Perl remove=perlFunctionName,perlElseIfError,perlBraces
 
 if exists("b:bfold")
     let perl_fold = b:bfold
